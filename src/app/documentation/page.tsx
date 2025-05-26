@@ -4,7 +4,20 @@ import Footer from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
 import { InstallationSection } from "@/components/InstallationSection";
 import { WhyUseSection } from "@/components/WhyUseSection";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Documentation | react-if-then-else-switch",
+  description:
+    "Explore the complete documentation of react-if-then-else-switch.",
+  keywords: [
+    "Next.js",
+    "Documentation",
+    "App Router",
+    "react-if-then-else-switch",
+  ],
+};
 
 export default function DocsPage() {
   return (
