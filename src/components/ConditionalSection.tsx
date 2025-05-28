@@ -10,13 +10,13 @@ import {
   Switch,
   Case,
   Default,
-} from "@lalit-khudania/react-conditionally";
+} from "react-if-then-else-switch";
 
-export const ConditionalExamples: React.FC = () => {
+const ConditionalExamples: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [userRole, setUserRole] = useState("admin");
   const [itemCount, setItemCount] = useState(0);
-  const [temperature, setTemperature] = useState(25); // For ElIf example
+  const [temperature, setTemperature] = useState(25);
 
   return (
     <>
@@ -36,7 +36,7 @@ export const ConditionalExamples: React.FC = () => {
           Usage: `IfElse` with `If` and `Else`
         </h3>
         <CodeBlock>
-          {`import { IfElse, If, Else } from 'react-conditional-renderer';
+          {`import { IfElse, If, Else } from 'react-if-then-else-switch';
 
 function MyComponent({ isLoggedIn }) {
   return (
@@ -93,7 +93,7 @@ function MyComponent({ isLoggedIn }) {
           within `IfElse`, nothing will be rendered.
         </p>
         <CodeBlock>
-          {`import { IfElse, If } from 'react-conditional-renderer';
+          {`import { IfElse, If } from 'react-if-then-else-switch';
 
 function MyComponent({ showAdminPanel }) {
   return (
@@ -127,6 +127,7 @@ function MyComponent({ showAdminPanel }) {
             Current Items:{" "}
             <span className="font-bold text-blue-300">{itemCount}</span>
           </p>
+
           <IfElse>
             <If condition={itemCount > 0}>
               <div className="p-4 bg-purple-600 bg-opacity-40 rounded-lg text-center border border-purple-500">
@@ -158,7 +159,7 @@ function MyComponent({ showAdminPanel }) {
           Usage: `IfElse` with `If`, `ElIf`, and `Else`
         </h3>
         <CodeBlock>
-          {`import { IfElse, If, ElIf, Else } from 'react-conditional-renderer';
+          {`import { IfElse, If, ElIf, Else } from 'react-if-then-else-switch';
 
 function TemperatureDisplay({ temp }) {
   return (
@@ -253,7 +254,7 @@ function TemperatureDisplay({ temp }) {
         </p>
         <h3 className="text-2xl font-semibold mb-4 text-blue-200">Usage</h3>
         <CodeBlock>
-          {`import { Switch, Case, Default } from 'react-conditional-renderer'; // Adjust import if needed
+          {`import { Switch, Case, Default } from 'react-if-then-else-switch';
 
 function UserDashboard({ role }) {
   return (
@@ -372,3 +373,5 @@ function UserDashboard({ role }) {
     </>
   );
 };
+
+export default ConditionalExamples;

@@ -1,11 +1,13 @@
 import AuthorInfo from "@/components/AuthorInfo";
-import { ConditionalExamples } from "@/components/ConditionalSection";
+
 import Footer from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
 import { InstallationSection } from "@/components/InstallationSection";
 import { WhyUseSection } from "@/components/WhyUseSection";
 import { Metadata } from "next";
-import React from "react";
+import ConditionalExamples from "@/components/ConditionalSection";
+
+import FollowUpPopupWrapper from "@/components/FollowUpPopupWrapper";
 
 export const metadata: Metadata = {
   title: "Documentation | react-if-then-else-switch",
@@ -32,6 +34,7 @@ export default function DocsPage() {
       </main>
 
       <Footer />
+      <FollowUpPopupWrapper />
     </div>
   );
 }

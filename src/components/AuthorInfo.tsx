@@ -1,18 +1,17 @@
 /* eslint-disable */
 const AuthorInfo: React.FC = () => {
   const authorName = "Lalit";
-  const githubLink =
-    "https://github.com/yourusername/react-conditional-renderer"; // Replace with your GitHub repo
-  const npmLink = "https://www.npmjs.com/package/react-conditional-renderer"; // Replace with your NPM package link
-  const linkedinLink = "https://www.linkedin.com/in/yourprofile"; // Replace with your LinkedIn profile
-  const twitterLink = "https://twitter.com/yourhandle"; // Replace with your Twitter handle
-  const buyMeACoffeeLink = "https://www.buymeacoffee.com/yourpage"; // Replace with your Buy Me a Coffee link
+  const githubLink = "https://github.com/khulalit/react-if-then-else-switch";
+  const npmLink = "https://www.npmjs.com/package/react-if-then-else-switch";
+  const linkedinLink = "https://www.linkedin.com/in/lalit-khudania";
+  const twitterLink = "https://x.com/lalitkhu";
+  // const buyMeACoffeeLink = "https://www.buymeacoffee.com/yourpage";
 
   return (
     <section className="mb-12 text-center">
       <h2 className="text-3xl font-bold mb-6 text-white">About the Author</h2>
       <p className="text-lg mb-4">
-        This library was crafted with ❤️ by
+        This library was crafted with ❤️ by{" "}
         <span className="font-semibold text-blue-200">{authorName}</span>. I'm
         passionate about building useful tools for the React community.
       </p>
@@ -79,7 +78,7 @@ const AuthorInfo: React.FC = () => {
           X
         </a>
       </div>
-      <a
+      {/* <a
         href={buyMeACoffeeLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -94,7 +93,7 @@ const AuthorInfo: React.FC = () => {
           <path d="M18 10H6c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3c0-1.1-.9-2-2-2zm-2 5H8v-3h8v3zM4 6h16v2H4zm17-4H3C1.9 2 1 2.9 1 4v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
         </svg>
         Buy Me a Coffee
-      </a>
+      </a> */}
     </section>
   );
 };
