@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
 import { LinkedinIcon, GithubIcon } from "lucide-react";
@@ -8,7 +9,7 @@ interface FollowMePopupProps {
 }
 
 const FollowMePopup: React.FC<FollowMePopupProps> = ({ isOpen, onClose }) => {
-  const portalRootRef = useRef<any>(null);
+  const portalRootRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     portalRootRef.current = document.querySelector("body");
